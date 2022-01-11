@@ -29,12 +29,15 @@ extern "C" {
 #include "Driver_Remote.h"
 #include "Driver_Gyroscope.h"
 #include "driver_hi229um.h"
+#include "task_remote.h"
+#include "driver_remote1.h"
 /* Exported variables ------------------------------------------------------------*/
 extern PROP_DutyTypeDef PROP_Speed ;
 extern SEVO_DutyTypeDef SEVO_Angle ;
 extern REMO_DataTypeDef REMO_Data ;
 extern GYRO_DataTypeDef GYRO_Data ;
 extern GYRO1_DataTypeDef GYRO1_DATA;
+extern RemoteDataPortStruct	RemoteDataPort;
 
 /* Exported types ------------------------------------------------------------*/
 

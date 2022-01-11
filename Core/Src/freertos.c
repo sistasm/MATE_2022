@@ -268,11 +268,12 @@ void Thread_Remote_ISR(void *argument)
 			{
 				/* 遥控器正常接收处理 */
 				REMO_GetData(&REMO_Data) ;
+				RemoteTaskControl(&RemoteDataPort);
 				break ;
 			}
 			default :
 			{
-				/* 遥控器接收超时处理 */
+				/* 遥控器接收超时处理 （关控保护）*/
 				break ;
 			}
 		}
