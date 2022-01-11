@@ -333,6 +333,7 @@ void Thread_Gyro1_ISR(void *argument)
 			case osOK :
 			{
 				/* 板载陀螺仪正常接收处理 */
+				get_HI229UMGyroData(&GYRO1_DATA);
 				break ;
 			}
 			default :
