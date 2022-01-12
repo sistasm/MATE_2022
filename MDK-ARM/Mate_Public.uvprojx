@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F405xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\BSP_A;..\DRIVER_A\Driver_JY901S;..\DRIVER_A\Driver_Propellors;..\DRIVER_A\Driver_Remote;..\DRIVER_A\Driver_Servo</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\BSP_A;..\DRIVER_A\Driver_JY901S;..\DRIVER_A\Driver_Propellors;..\DRIVER_A\Driver_Remote;..\DRIVER_A\Driver_Servo;..\DRIVER_A\Driver_hi229;..\TASK_A\TASKREMOTE</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -643,10 +643,27 @@
               <FileType>1</FileType>
               <FilePath>..\DRIVER_A\Driver_Servo\Driver_Servo.c</FilePath>
             </File>
+            <File>
+              <FileName>driver_remote1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\DRIVER_A\Driver_Remote\driver_remote1.c</FilePath>
+            </File>
+            <File>
+              <FileName>driver_hi229um.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\DRIVER_A\Driver_hi229\driver_hi229um.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Application/Task</GroupName>
+          <Files>
+            <File>
+              <FileName>task_remote.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\TASK_A\TASKREMOTE\task_remote.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
