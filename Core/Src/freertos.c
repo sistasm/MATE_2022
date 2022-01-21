@@ -240,8 +240,9 @@ void Thread_LED(void *argument)
   /* Infinite loop */
   for(;;)
   {
-		SEVO_AngleSet(&SEVO_Angle) ;
-		PROP_SpeedSet(&PROP_Speed) ;
+		HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin) ;
+		HAL_Delay(100) ;
+		HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin) ;
     osDelay(1000);
   }
   /* USER CODE END Thread_LED */
